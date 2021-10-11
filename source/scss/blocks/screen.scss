@@ -6,6 +6,12 @@
   z-index: 1;
   overflow: hidden;
 
+  &.active {
+    .fade-in-up {
+      animation: FADE-IN 1.25s $fade-in-move-timing-function, MOVE-UP 0.75s ease-out;
+    }
+  }
+
   &--hidden {
     display: none;
   }
