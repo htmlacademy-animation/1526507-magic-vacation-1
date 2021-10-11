@@ -241,7 +241,7 @@
     display: block;
     color: inherit;
     padding: 0 0.5em 0.5em;
-    transition: color 350ms ease 100ms;
+    transition: color 0.35s ease 0.1s;
 
     &::after {
       content: "";
@@ -253,7 +253,7 @@
       left: 0;
       transform-origin: 100% 0;
       transform: scale(0, 1);
-      transition: transform 350ms ease, background-color 250s ease;
+      transition: transform 0.35s ease, background-color 0.25s ease;
 
       @media (max-width: $tablet) and (orientation: portrait) {
         left: 0;
@@ -278,14 +278,14 @@
     &:focus {
       color: $c-purple;
       outline: none;
-      transition: color 350ms ease;
+      transition: color 0.35s ease;
 
       &::after {
         opacity: 1;
         background-color: $c-purple;
         transform-origin: 0 0;
         transform: scale(1, 1);
-        transition: transform 350ms ease, background-color 250ms ease;
+        transition: transform 0.35s ease, background-color 0.25s ease;
       }
     }
   }
