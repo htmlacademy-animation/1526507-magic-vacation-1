@@ -63,6 +63,13 @@
       }
     }
   }
+
+  &.swiper-slide-active,
+  &.swiper-slide-next {
+    .fade-in-left {
+      animation: FADE-IN 1.25s $fade-in-move-timing-function, MOVE-LEFT 0.75s ease-out;
+    }
+  }
 }
 
 .slider__item-title {
