@@ -7,6 +7,26 @@
       pointer-events: auto;
     }
   }
+
+  .social-block__link {
+    opacity: 0;
+  }
+
+  &--active {
+    .social-block__link {
+      opacity: 1;
+
+      &--fb {
+        transition: opacity 0.350s ease 0.1s;
+      }
+      &--insta {
+        transition: opacity 0.350s ease 0.2s;
+      }
+      &--vk {
+        transition: opacity 0.350s ease 0.3s;
+      }
+    }
+  }
 }
 
 .social-block__toggler {
@@ -168,6 +188,7 @@
   color: $c-light;
   border: 2px solid transparent;
   border-radius: 50%;
+  transition: color 0.15s ease;
 
   @media (min-width: $stop-scaling) {
     width: 40px;
@@ -186,6 +207,7 @@
 
   &:hover {
     color: $c-purple;
+    transition: color 0.35s ease;
   }
 
   &:focus {

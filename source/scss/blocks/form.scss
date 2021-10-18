@@ -43,6 +43,8 @@
   border: 0;
   border-radius: 3rem;
   outline: none;
+  transform-origin: 100% 0;
+  animation: STRETCH-WIDTH 0.45s ease-out;
 
   &:focus {
     border: 1px solid $c-purple;

@@ -1,0 +1,19 @@
+@keyframes FADE-IN {
+  from   { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes MOVE-UP {
+  from { transform: translateY(10%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes MOVE-LEFT {
+  from { transform: translateX(10%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes STRETCH-WIDTH {
+  from   { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
